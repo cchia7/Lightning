@@ -12,13 +12,10 @@ void setup()
   background(255,255,255);
   strokeWeight(1);
   size(300,300);
-  String c = "Press your mouse to use Thundershock. Scroll your mouse wheel to use Double Team.";
-  fill(50);
-  text(c,0,0,300,75);
 }
-
 void draw()
 {
+  
 //individual points for outline body
 beginShape(POINTS);
 stroke(0,0,0);
@@ -267,5 +264,5 @@ text(d,150,225,150,75);
 wheel = 1;
 }
 x = (int)(Math.random() * 268 - 21);
-y = (int)(Math.random() * 168);
+y = (int)(Math.random() * 168 - 29);
 }
