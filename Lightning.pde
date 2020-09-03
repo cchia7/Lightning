@@ -257,7 +257,7 @@ endY = 100;
 //double team
 void keyPressed()
 {
-  if(key == TAB){
+  if(key == ENTER){
 if(up == 0){  
 String d = "Electrode used Double Team!";
 fill(50);
