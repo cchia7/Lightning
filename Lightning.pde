@@ -5,7 +5,7 @@ int endY = 100;
 int x = 115;
 int y = 115;
 int pressed = 0;
-int wheel = 0;
+int up = 0;
 
 void setup()
 {
@@ -255,14 +255,16 @@ endY = 100;
 }
 
 //double team
-void mouseWheel()
+void keyPressed()
 {
-if(wheel == 0){  
+  if(key == TAB){
+if(up == 0){  
 String d = "Electrode used Double Team!";
 fill(50);
 text(d,150,225,150,75);
-wheel = 1;
+up = 1;
 }
 x = (int)(Math.random() * 268 - 21);
 y = (int)(Math.random() * 168 - 29);
+  }
 }
